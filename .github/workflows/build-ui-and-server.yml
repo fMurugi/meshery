@@ -315,7 +315,7 @@ jobs:
         version: latest
 
     - name: Lint Rego Policies
-      run: regal lint --format github ./policies/wasm/policies/namespace_discovery_relationship_policy/clomonitor.rego
+      run: regal lint --format github ./policies/clomonitor
 
     - name: Upload Lint Results
       if: failure()
