@@ -153,7 +153,10 @@ allow {
   not failed_checks[_]
 }
 
+
 failed_checks[check_name] {
   check_name := input.checks[_]
   not check(check_name)
 }
+
+
