@@ -127,7 +127,7 @@ jobs:
       - name: Scan Docker image with Trivy
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: ${{ secrets.IMAGE_NAME}}:edge-latest
+          image-ref: ${{ secrets.IMAGE_NAME }}:edge-latest
           format: table
           exit-code: 1
           ignore-unfixed: true
